@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)http://localhost/Portfolio/game.php?id=1 -->
+<!-- saved from url=(0044)http://localhost/PortfolioDynamic/skills.php -->
 <html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><!--HEAD ELEMENT --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="Content-Type" content="text/html">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     
-    <title>Game Page</title>
+    <title>Carcasscade</title>
     <!-- Include External CSS -->
-    <link href="./carcasscade_files/bootstrap.css" rel="stylesheet">
-<link href="./carcasscade_files/site.css" rel="stylesheet">
+    <link href="CSS/bootstrap.css" rel="stylesheet">
+<link href="CSS/site.css" rel="stylesheet">
 
-<link id="operaalerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://eplcjggklbefnipglcfdfalbbjpmkbkl/content.css"><style type="text/css"></style></head>
+<style type="text/css" id="operaUserStyle"></style><link id="operaalerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://eplcjggklbefnipglcfdfalbbjpmkbkl/content.css"><style type="text/css"></style></head>
 <!--BODY ELEMENT -->
 <body>
     <!--PHP GENERATED PAGE CONTENT -->
-    <div class="wrapdiv">
-<div class="backgroundShaded container">
-<div class="container">
+	<div class="animBGcarcasscade"></div>
+    
+        
+    <div class="wrapdiv behindpic">
+<div class="backgroundShaded container ">
+<div class="container ">
 	<div class="header clearfix">
 		<nav>
 		    
 			<ul class="nav nav-pills pull-right">
 				
-				<li role="presentation"><a href="education.html">Education</a></li>
-				<li role="presentation"><a href="projects.html">Projects</a></li>
-				<li role="presentation"><a href="skills.html">Skills</a></li>
-                
+				<li role="presentation"><a href="education.html"><h5><b>Education</b></h5></a></li>
+				<li role="presentation" ><a href="projects.html" ><h5><b>Projects</b></h5></a></li>
+				<li role="presentation"><a href="skills.html"><h5><b>Skills</b></h5></a></li>
+                <li role="presentation" ><a href="https://www.linkedin.com/in/radoslaw-dorociak/"><img src="Images/linkedin.png" ></a></li>
+                <li role="presentation" ><a href="https://revenarine.itch.io"><img src="Images/itch.png" ></a></li>
+                <li role="presentation" ><a href="https://github.com/RadoslawDorociak"><img src="Images/git.png" ></a></li>
                 
 			</ul>
-			<h3 class="text-muted"><a href="index.html">Radoslaw Dorociak</a></h3>
+			<h3 class="text-muted"><a href="index.html" class="linkInTheme">Radoslaw Dorociak</a></h3>
 		</nav>
 	</div>
 	<div class="gamerowbg">
@@ -37,52 +42,94 @@
     </div>
 	<div class="row details">
 		    
-          <article class="row marketing">
-        <h1>Carcasscade</h1>
-
-        <div class="media-left">
-            <img src="./carcasscade_files/1.jpg" width="350"><p>
-            </p><h3> Play it online right here: </h3>
-            <div class="jumbotron awardssection ">
-           
-            <a href="https://revenarine.itch.io/carcasscade">
-  <button class="btn btn-info">Play Now</button>
-  </a>
-  
-  </div>
-<iframe width="350" height="196" src="https://www.youtube.com/embed/VxC0XblcE28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="media-body ">
-            <div class="well awardssection ">
-            <h2>Sumbission to </h2><h1><a href="https://itch.io/jam/gjl-game-parade-fall-2021">Game Parade Fall 2021</a></h1>
-            <h2>Has ranked  3rd out of 53 submissions in a <a href="https://itch.io/jam/gjl-game-parade-fall-2021/results">community vote</a> and achieved a score of <a href="https://itch.io/jam/gjl-game-parade-fall-2021/rate/1287116">4/5</a></h2>
-            <h2>Received awards:</h2>
-            
-            
-        
-          <img src="./carcasscade_files/fall_art.png" width="200">
-    
-        <img src="./carcasscade_files/fall_page.png" width="200">
-    
-    
-      </div>
-        <h3>Description:</h3> <p></p><h4><b>First Game Jam - First challange</b></h4>
-I consider Carcasscade to be my first serious game project, it is also the first one that I have released. The game was made for The Game Parade Fall 2021, a 7 day long game jam hosted by Game Jobs Live. Developing a full game in a short time period has done a great deal in teaching me how to work with deadlines and plan my projects.
-<p></p><h4><b>The brainstorm</b></h4>
-
-The first full day was spent on the drawing board, thinking of ways to incorporate the jam’s theme of “Leaving something behind” as an interesting mechanic that would enhance the experience with the game. After a lot of brainstorming, I have come up with the idea of a platformer, where each death leaves behind a body that can be used as a platform. It follows the theme closely, and allows for many interesting mechanics.<p>
-	</p><h4><b>The save sytem</b></h4>
-Of course, the first difficulty was figuring out how to make it work. In order for the bodies to be left behind in the right spot upon the scene resetting, I had to implement a save system. It was the first time that I attempted it, and it worked perfectly. Every death saves a position, and adds it to a list that is stored in a file. At the start of the scene, the list of coordinates is loaded and a prefab object is initialised on each of them, thus creating the bodies.<p>
-	</p><h4><b>Using skills in game design</b></h4>
-Since I had a working save system, I couldn’t just stop there. I decided to go an extra mile and introduce other mechanics that would be saved along the bodies. Carcasscade is a game with an open world, what makes it unique is that there is only one starting point and no checkpoints in between. The way a player can progress through the game is by opening shortcuts, that make the path they take a lot easier in the following attempts. The save system checks which shortcuts have been unlocked and initialises the scene elements in an appropriate state. All progress can be reset by starting a new game, which clears the list of bodies and locks all the shortcuts.<p> 
-	</p><h4><b>Working achievements</b></h4>
-Another thing that was introduced is a save system independent of starting a new game, that manages achievements. After the player completes a specific task, a trophy is unlocked in the trophy section and remains unlocked even after starting a new game, that is due to the use of the player prefs over the regular save file that is used to store other data.
-<h4><b>The aftermath</b></h4>
-The game has done reasonably well, and has received good ratings during the game jam. The feedback provided both by users and by industry professionals that have reviewed the game, helped me understand many principles of good game design. The game was made by a team of 2, with me working on all the programming, pixel art and game design. The other member of the team has provided the cover art for the game, as well as the background art.
-
+       
  
-    </div></article>
+    <article class="row marketing ">
+	
+		<section class="well sized-text alignMiddle aligncorrectly behindpicprj indexPanel">
+			<h1><b>Carcasscade</b></h1>
+			
+			<div class="jumbotron awardssection behindpicstr panel panel-primary">
+           
+				<a href="https://revenarine.itch.io/carcasscade">
+	  <button class="btn btn-info" ><div class="playNowButton"><b>Play Now </b><img src="Images/itch.png" ></div></button>
+	  </a></div>
+
+	  
+			<a href="https://itch.io/jam/gjl-game-parade-fall-2021">
+				<div class="panel panel-primary indexPanel gjlProjectPanel  panelMarigin">
+				
+					
+					
+					<h1 class="textgjl"><b>GJL Game Parade Fall 2021</b></h1> 
+					<img src="Images/fall_art.png" width="25%"><img src="Images/fall_page.png" width="25%">
+					
+					
+					<h5 class="textgjl"><b>Ranked 3rd out of 53 Entries</b></h5>
+					<br>
+	
+					
+					
+				</div>
+			</a>
+
+				<div class="panel panel-primary indexPanel behindpicstr  panelMarigin">
+				
+					<h2><b>First Game Jam - First challange</b></h2> 
+					
+					<video autoplay loop muted plays-inline class="sizedVidPrj eduImage" >
+						<source src="Images/carc5.mp4">
+					</video><br><br>
+					I consider Carcasscade to be my first serious game project, it is also the first one that I have released. The game was made for The Game Parade Fall 2021, a 7 day long game jam hosted by Game Jobs Live. Developing a full game in a short time period has done a great deal in teaching me how to work with deadlines and plan my projects.
+					<br><br>
+	
+					<h2><b>The Brainstorm</b></h2> 
+					<video autoplay loop muted plays-inline class="sizedVidPrj eduImage" >
+						<source src="Images/carc4.mp4">
+					</video><br><br>
+					The first full day was spent on the drawing board, thinking of ways to incorporate the jam’s theme of “Leaving something behind” as an interesting mechanic that would enhance the experience with the game. After a lot of brainstorming, I have come up with the idea of a platformer, where each death leaves behind a body that can be used as a platform. It follows the theme closely, and allows for many interesting mechanics.
+					<br><br>
+
+					<h2><b>The save sytem</b></h2> 
+					<img src="https://img.itch.zone/aW1hZ2UvMTI4NzExNi83NDkwMDQwLnBuZw==/original/CP2LMF.png" width="70%" class="eduImage"><br><br>
+					Of course, the first difficulty was figuring out how to make it work. In order for the bodies to be left behind in the right spot upon the scene resetting, I had to implement a save system. It was the first time that I attempted it, and it worked perfectly. Every death saves a position, and adds it to a list that is stored in a file. At the start of the scene, the list of coordinates is loaded and a prefab object is initialised on each of them, thus creating the bodies.
+					<br><br>
+
+					<h2><b>Using skills in game design</b></h2> 
+					<video autoplay loop muted plays-inline class="sizedVidPrj eduImage" >
+						<source src="Images/prj6.mp4">
+					</video>
+					<br><br>
+					Since I had a working save system, I couldn’t just stop there. I decided to go an extra mile and introduce other mechanics that would be saved along the bodies. Carcasscade is a game with an open world, what makes it unique is that there is only one starting point and no checkpoints in between. The way a player can progress through the game is by opening shortcuts, that make the path they take a lot easier in the following attempts. The save system checks which shortcuts have been unlocked and initialises the scene elements in an appropriate state. All progress can be reset by starting a new game, which clears the list of bodies and locks all the shortcuts.
+					<br><br>
+
+					<h2><b>Working Achievements</b></h2> 
+					<img src="Images/carc1.jpg" width="80%" class="eduImage"><br><br>
+					Another thing that was introduced is a save system independent of starting a new game, that manages achievements. After the player completes a specific task, a trophy is unlocked in the trophy section and remains unlocked even after starting a new game, that is due to the use of the player prefs over the regular save file that is used to store other data.
+					<br><br>
+
+					<h2><b>The aftermath</b></h2> 
+					<a href="https://itch.io/jam/gjl-game-parade-fall-2021/results">
+						<img src="Images/carc3.png" width="100%">
+						<h5><b>Ranked 3rd out of 53 Entries</b></h5></a>
+						The game has done reasonably well, and has received good ratings during the game jam. The feedback provided both by users and by industry professionals that have reviewed the game, helped me understand many principles of good game design. The game was made by a team of 2, with me working on all the programming, pixel art and game design. The other member of the team has provided the cover art for the game, as well as the background art.
+					<br><br>
+				</div>
+			
+			
+			
+			
+
+
+
+
+
+</section>
+</article>
+		</div>
+     
     
+
     </div>
     <footer class="footer">
 		<p>Website by Radoslaw Dorociak.
@@ -91,9 +138,9 @@ The game has done reasonably well, and has received good ratings during the game
 </div>        
     
     <!-- EXTERNAL SCRIPTS -->
-    <script src="./carcasscade_files/jquery-2.2.4.js.pobrany plik"></script>
-   <script src="./carcasscade_files/bootstrap.js.pobrany plik"></script>
-   <script src="./carcasscade_files/holder.js.pobrany plik"></script>
+    <script src="JavaScript/jquery-2.2.4.js.pobrany plik"></script>
+   <script src="JavaScript/bootstrap.js.pobrany plik"></script>
+   
    
 
 </div></div></body></html>
